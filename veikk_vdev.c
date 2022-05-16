@@ -100,8 +100,9 @@ static int veikk_s640_handle_raw_data(struct veikk *veikk, u8 *data, int size,
     case VEIKK_PEN_REPORT:
     case VEIKK_STYLUS_REPORT:
         // validate size
-        if(size != sizeof(struct veikk_pen_report))
-            return -EINVAL;
+        // On A50 the size is 10 bytes...  
+        // if(size != sizeof(struct veikk_pen_report))
+        //    return -EINVAL;
 
         // dispatch events with input_dev
         pen_report = (struct veikk_pen_report *) data;
