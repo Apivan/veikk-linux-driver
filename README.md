@@ -1,4 +1,4 @@
-# this is the fork from  jlam55555/veikk-linux-driver. Just to dirty fix A50.
+# Forked from  jlam55555/veikk-linux-driver. Just to dirty fix A50.
 Tested on Raspberry pi but should work on other platfroms as well. 
 
 # An [official driver][official-driver] has been released by VEIKK.
